@@ -4,7 +4,8 @@ let app=express();//inisialising
 let cors=require('cors')
 let mongo=require('mongodb')
 let MongoClient=mongo.MongoClient
-let mongoUrl="mongodb://127.0.0.1:27017"
+let mongoUrl="mongodb+srv://test:test1234@cluster0.lofuhf0.mongodb.net/?retryWrites=true&w=majority"
+
 //let mongoUrl="mongodb+srv:<test123>:<vgK4rxzMwv11j7hV>@cluster0.sxpkhgk.mongodb.net/?retryWrites=true&w=majority"
 
 
