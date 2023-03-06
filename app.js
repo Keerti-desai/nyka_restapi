@@ -4,11 +4,7 @@ let app=express();//inisialising
 let cors=require('cors')
 let mongo=require('mongodb')
 let MongoClient=mongo.MongoClient
-let mongoUrl="mongodb+srv://test:test1234@cluster0.lofuhf0.mongodb.net/?retryWrites=true&w=majority"
-
-//let mongoUrl="mongodb+srv:<test123>:<vgK4rxzMwv11j7hV>@cluster0.sxpkhgk.mongodb.net/?retryWrites=true&w=majority"
-
-
+let mongoUrl="mongodb+srv://use:use1234@cluster0.sxpkhgk.mongodb.net/?retryWrites=true&w=majority"
 let port = process.env.PORT || 9000
 let bodyParser = require("body-parser")
 let db = null;
@@ -61,7 +57,7 @@ app.get('/productlist',(req,res)=>{
 //         res.send(result)
 //     })
 // })
-http://localhost:9000/productlist?categoryid=Nykaa Cosmetics
+//http://localhost:9000/productlist?categoryid=Nykaa Cosmetics
 
 app.get('/productlist/:categoryid', (req, res) =>{
     let query = {}      
